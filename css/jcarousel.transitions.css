@@ -1,0 +1,88 @@
+.jcarousel-wrapper {
+   /* margin: 20px auto; */
+   padding-top: 5em;
+   position: relative;
+   width: 100%;
+   height: 100%;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   /* -webkit-box-shadow: 0 0 2px #999;
+   -moz-box-shadow: 0 0 2px #999;
+   box-shadow: 0 0 2px #999; */
+}
+/*
+.jcarousel-wrapper .photo-credits {
+   position: absolute;
+   right: 15px;
+   bottom: 0;
+   font-size: 13px;
+   color: #fff;
+   text-shadow: 0 0 1px rgba(0, 0, 0, .85);
+   opacity: .66;
+}
+
+.jcarousel-wrapper .photo-credits a {
+   color: #fff;
+} */
+
+/** Carousel **/
+
+.jcarousel {
+   position: relative;
+   overflow: hidden;
+}
+
+.jcarousel ul {
+   width: 10000em;
+   position: relative;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.jcarousel li {
+   position: relative;
+   float: left;
+   width: 1267px;
+   height: 525px;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+   padding: 10px;
+   position: absolute;
+   top: 300px;
+   /** Can be used to adjust the height of the control buttons **/
+   width: 20px;
+   height: 120px;
+   /** Can be used to adjust the size of the control buttons' outline **/
+   text-align: center;
+   background: #000;
+   color: #fff;
+   text-decoration: none;
+   /* text-shadow: 0 0 1px #000; */
+   font: 90px/90px 'Kranky', cursive;
+   /** Can be used to adjust the size of the control buttons **/
+   -webkit-border-radius: 32px;
+   -moz-border-radius: 32px;
+   border-radius: 32px;
+   /* -webkit-box-shadow: 0 0 2px #999; */
+   /* -moz-box-shadow: 0 0 2px #999;
+   box-shadow: 0 0 2px #999; */
+}
+
+.jcarousel-control-prev {
+   left: 20px;
+}
+
+.jcarousel-control-next {
+   right: 20px;
+}
+
+.jcarousel-control-prev:hover span,
+.jcarousel-control-next:hover span {
+   display: block;
+}
