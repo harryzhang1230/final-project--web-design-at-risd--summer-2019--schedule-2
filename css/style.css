@@ -155,6 +155,10 @@ li:focus-within {
    /* cursor: pointer; */
 }
 
+a:visited {
+   color:black;
+}
+
 /* color of text after clicking on an item*/
 li:focus-within a {
    color: #fff;
