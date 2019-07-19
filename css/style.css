@@ -120,18 +120,21 @@ a {
 
 nav {
    font-family: 'Kranky', cursive;
+   text-align: right;
    padding-right: 2em;
    padding-bottom: .5em;
 }
 
 ul {
+   font-size: 24px;
    list-style: none;
    margin: 0;
    padding-left: 0;
 }
 
 li {
-   font-size: 24px;
+   font-size: 22px;
+   text-align: right;
    color: #fff;
    background: #000;
    display: block;
@@ -145,6 +148,7 @@ li {
 /* a visited */
 li a {
    color: #fff;
+   text-align: right;
    background-color: #000;
 }
 
@@ -155,9 +159,9 @@ li:focus-within {
    /* cursor: pointer; */
 }
 
-a:visited {
+/* a:visited {
    color:black;
-}
+} */
 
 /* color of text after clicking on an item*/
 li:focus-within a {
@@ -165,9 +169,9 @@ li:focus-within a {
    outline: none;
 }
 
-a:visited {
+/* a:visited {
    color: black;
-}
+} */
 
 /* havent tested */
 ul li ul {
@@ -205,4 +209,43 @@ ul li ul li [role="navigation"] {
    color: #000;
    background-color: #fff;
    padding-bottom: 1.5em;
+}
+
+#container {
+   width: 960px;
+   height: 100vh;
+   margin: auto;
+}
+
+#container::before {
+   font: message-box;
+   content: 'No media query present';
+   position: fixed;
+   left: 0;
+   top: 50%;
+   line-height: 40px;
+   padding: 20px;
+   background-color: lightgreen;
+}
+
+@media (max-width: 1024px) {
+   #container {
+      width: 768px;
+   }
+
+   #container::before {
+      content: '1024px breakpoint';
+      background-color: pink;
+   }
+}
+
+@media (max-width: 860px) {
+   #container {
+      width: 89.3%;
+   }
+
+   #container::before {
+      content: '860 breakpoint';
+      background-color: lightblue;
+   }
 }
