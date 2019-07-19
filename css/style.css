@@ -114,6 +114,11 @@ p {
    color: #000;
 }
 
+.nav {
+   position: relative;
+   z-index: 2;
+}
+
 a {
    text-decoration: none;
 }
