@@ -161,6 +161,10 @@ li:focus-within a {
    outline: none;
 }
 
+a:visited {
+   color: black;
+}
+
 /* havent tested */
 ul li ul {
    color: #000;
